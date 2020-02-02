@@ -28,7 +28,7 @@
                         <LineBreak />
                         use <Bold>Button #1</Bold> and Input to insert a value
                         <LineBreak />
-                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/SetB.png" />
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/SetA.png" />
                     </TextBlock>
                 </StackPanel>
             </ListBox.ToolTip>
