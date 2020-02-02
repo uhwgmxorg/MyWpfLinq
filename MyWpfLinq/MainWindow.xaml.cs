@@ -228,7 +228,7 @@ namespace MyWpfLinq
             SetB.Add("6");
             SetB.Add("8");
             SetB.Add("10");
-            SetB.Add("11");
+            SetB.Add("12");
 
             SetT.Add("1");
             SetT.Add("2");

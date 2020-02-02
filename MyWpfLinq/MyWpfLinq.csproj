@@ -93,7 +93,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\SetA.png" />
+    <Resource Include="Resources\SetB.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\InfoIcon.png" />
     <Resource Include="Resources\Intersection.png" />

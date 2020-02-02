@@ -7,7 +7,19 @@
         mc:Ignorable="d"
         Title="MyWpfLinq" Height="546.348" Width="460.187">
     <Grid>
-        <Label Content="Set A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Set A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.ToolTip>
+                <StackPanel>
+                    <TextBlock Margin="0,0,0,5">
+                        <Bold>Set A</Bold>
+                        <LineBreak />
+                        use <Bold>Button #1</Bold> and Input to insert a value
+                        <LineBreak />
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/SetA.png" />
+                    </TextBlock>
+                </StackPanel>
+            </Label.ToolTip>
+        </Label>
         <ListBox ItemsSource="{Binding SetA}" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Height="210" Margin="10,31,0,0" VerticalAlignment="Top" Width="100">
             <ListBox.ToolTip>
                 <StackPanel>
@@ -15,12 +27,26 @@
                         <Bold>Set A</Bold>
                         <LineBreak />
                         use <Bold>Button #1</Bold> and Input to insert a value
+                        <LineBreak />
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/SetB.png" />
                     </TextBlock>
                 </StackPanel>
             </ListBox.ToolTip>
         </ListBox>
 
-        <Label Content="Set B" HorizontalAlignment="Left" Margin="115,0,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Set B" HorizontalAlignment="Left" Margin="115,0,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.ToolTip>
+                <StackPanel>
+                    <TextBlock Margin="0,0,0,5">
+                        <Bold>Set B</Bold>
+                        <LineBreak />
+                        use <Bold>Button #2</Bold> and Input to insert a value
+                        <LineBreak />
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/SetB.png" />
+                    </TextBlock>
+                </StackPanel>
+            </Label.ToolTip>
+        </Label>
         <ListBox ItemsSource="{Binding SetB}" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Height="210" Margin="115,31,0,0" VerticalAlignment="Top" Width="100">
             <ListBox.ToolTip>
                 <StackPanel>
@@ -28,12 +54,31 @@
                         <Bold>Set B</Bold>
                         <LineBreak />
                         use <Bold>Button #2</Bold> and Input to insert a value
+                        <LineBreak />
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/SetB.png" />
                     </TextBlock>
                 </StackPanel>
             </ListBox.ToolTip>
         </ListBox>
 
-        <Label Content="Subset T ?" ToolTip="Push the #4 Button to check" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Margin="220,0,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Subset T ?" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Margin="220,0,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.ToolTip>
+                <StackPanel>
+                    <TextBlock Margin="0,0,0,5">
+                        <Bold>Push the #4 Button to check</Bold>
+                        <LineBreak />
+                        <LineBreak />
+                        <Bold>Subset of T of A</Bold>
+                        <LineBreak />
+                        use <Bold>Button #3</Bold> and Input to insert a value
+                        <LineBreak />
+                        and use <Bold>Button #4</Bold> to check if it is correct
+                        <LineBreak />
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/Subset.png" />
+                    </TextBlock>
+                </StackPanel>
+            </Label.ToolTip>
+        </Label>
         <ListBox ItemsSource="{Binding SetT}" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Height="210" Margin="220,31,0,0" VerticalAlignment="Top" Width="100">
             <ListBox.ToolTip>
                 <StackPanel>
@@ -50,7 +95,15 @@
             </ListBox.ToolTip>
         </ListBox>
 
-        <Label Content="Intersection I" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Intersection I" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.ToolTip>
+                <StackPanel>
+                    <TextBlock Margin="0,0,0,5">
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/Intersection.png" />
+                    </TextBlock>
+                </StackPanel>
+            </Label.ToolTip>
+        </Label>
         <ListBox ItemsSource="{Binding IntersectionAB}" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Height="210" Margin="10,286,0,0" VerticalAlignment="Top" Width="100">
             <ListBox.ToolTip>
                 <StackPanel>
@@ -61,7 +114,15 @@
             </ListBox.ToolTip>
         </ListBox>
 
-        <Label Content="Union U" HorizontalAlignment="Left" Margin="115,255,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Union U" HorizontalAlignment="Left" Margin="115,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.ToolTip>
+                <StackPanel>
+                    <TextBlock Margin="0,0,0,5">
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/Union.png" />
+                    </TextBlock>
+                </StackPanel>
+            </Label.ToolTip>
+        </Label>
         <ListBox ItemsSource="{Binding UnionAB}" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Height="210" Margin="115,286,0,0" VerticalAlignment="Top" Width="100">
             <ListBox.ToolTip>
                 <StackPanel>
@@ -72,7 +133,15 @@
             </ListBox.ToolTip>
         </ListBox>
 
-        <Label Content="Relative Complement R" HorizontalAlignment="Left" Margin="220,255,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Relative Complement R" HorizontalAlignment="Left" Margin="220,255,0,0" VerticalAlignment="Top" FontWeight="Bold">
+            <Label.ToolTip>
+                <StackPanel>
+                    <TextBlock Margin="0,0,0,5">
+                        <Image Height="Auto" Width="Auto" Margin="5,5,5,5"  Source="/MyWpfLinq;component/Resources/RelativeComplement.png" />
+                    </TextBlock>
+                </StackPanel>
+            </Label.ToolTip>
+        </Label>
         <ListBox ItemsSource="{Binding RelativeComplementAB}" ToolTipService.ShowDuration="0x7FFFFFFF" HorizontalAlignment="Left" Height="210" Margin="220,286,0,0" VerticalAlignment="Top" Width="100">
             <ListBox.ToolTip>
                 <StackPanel>
