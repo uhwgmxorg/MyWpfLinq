@@ -212,9 +212,6 @@ namespace MyWpfLinq
             SetA = new ObservableCollection<string>();
             SetB = new ObservableCollection<string>();
             SetT = new ObservableCollection<string>();
-            IntersectionAB = new ObservableCollection<string>();
-            UnionAB = new ObservableCollection<string>();
-            RelativeComplementAB = new ObservableCollection<string>();
 
             SetA.Add("1");
             SetA.Add("2");
