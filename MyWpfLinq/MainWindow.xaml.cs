@@ -158,17 +158,20 @@ namespace MyWpfLinq
         /// <param name="e"></param>
         private void Button5_Click(object sender, RoutedEventArgs e)
         {
+            ClearSets();
+        }
+        private void ClearSets()
+        {
             SetA.Clear();
             SetB.Clear();
             SetT.Clear();
-            if(IntersectionAB != null)
+            if (IntersectionAB != null)
                 IntersectionAB.Clear();
             if (UnionAB != null)
                 UnionAB.Clear();
             if (RelativeComplementAB != null)
                 RelativeComplementAB.Clear();
         }
-
         /// <summary>
         /// Button6_Click
         /// </summary>
@@ -176,6 +179,7 @@ namespace MyWpfLinq
         /// <param name="e"></param>
         private void Button6_Click(object sender, RoutedEventArgs e)
         {
+            ClearSets();
             InitSets();
         }
 
