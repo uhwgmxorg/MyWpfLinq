@@ -161,9 +161,12 @@ namespace MyWpfLinq
             SetA.Clear();
             SetB.Clear();
             SetT.Clear();
-            IntersectionAB.Clear();
-            UnionAB.Clear();
-            RelativeComplementAB.Clear();
+            if(IntersectionAB != null)
+                IntersectionAB.Clear();
+            if (UnionAB != null)
+                UnionAB.Clear();
+            if (RelativeComplementAB != null)
+                RelativeComplementAB.Clear();
         }
 
         /// <summary>
